@@ -1,0 +1,71 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;;
+}
+#navbar ul{
+    background-color: rgb(175, 44, 44);
+    width: 100%;
+    position: fixed;
+    top:0;
+    padding: 0px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+#navbar li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin: 0px;
+    font-size: 20px;
+    font-family: 'Open sans';
+    font-weight: 600;
+    padding: 15px 22px;
+}
+#navbar li:hover{
+    background-color: rgb(17, 52, 85);
+}
+.contenedor{
+    background-color: teal;
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 0px;
+}
+#welcome-section{
+    background: linear-gradient(90deg, rgb(63, 63, 63), rgb(26, 26, 26));
+    padding: 60px;
+    height: 400px;
+    border-bottom: 2px solid black;
+}
+h1{
+    margin-top: 100px;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    color: white;
+}
+#welcome-section p{
+    color: rgba(167, 50, 50, 0.972);
+    width: 100%;
+    padding: 0px 20px;
+    margin-top: -30px;
+    margin-left: -20px;
+    font-size: 23px;
+    text-align: center;
+    font-style: italic;
+}
+#projects{
+    border-bottom: 2px solid black;
+}
+article img{
+    width: 100%;
+}
+.btn{
+    border-bottom: 2px solid black;
+}
