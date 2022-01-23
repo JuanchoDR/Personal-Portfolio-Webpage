@@ -5,33 +5,36 @@ body{
     font-family: 'Poppins', sans-serif;
     color: white;
     background-color: rgb(51, 54, 58);
-}
+}  
+
 #navbar ul{
     background-color: rgb(175, 44, 44);
-    width: 100%;
-    position: fixed;
-    top:0;
-    left:0;
-    padding: 0;
     margin: 0;
-    border-bottom: 1px solid black;
-    box-shadow: 0 10px 20px rgb(24,24,24);
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     list-style: none;
+    overflow: hidden;
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid black;
+    box-shadow: 0 10px 20px rgb(24,24,24);
     z-index: 100;
 }
+
 #navbar li a{
-   
     display: block;
-    text-decoration: none;
     color: white;
-    margin: 0px;
+    text-align: center;
+    padding: 18px 22px;
+    text-decoration: none;
     font-size: 20px;
     font-family: 'Open sans';
     font-weight: 600;
-    padding: 15px 22px;
 }
+
 #navbar li:hover{
     background-color: rgb(76, 90, 128);
 }
@@ -39,7 +42,7 @@ body{
     position: relative;
     background: linear-gradient(90deg, rgb(63,63,63), rgb(24,24,24));
     height: 100vh;
-    border-bottom: 2px solid black;
+    
 }
 #welcome-section header{
     position: absolute;
@@ -65,7 +68,7 @@ h1{
 #projects{
     background-color: rgb(76, 90, 128);
     padding: 0;
-    border-bottom: 2px solid rgb(190, 65, 65);
+    height: auto;
 }
 .project-tile{
     text-align: center;
@@ -79,12 +82,11 @@ h1{
 .blog{
     display: grid;
     justify-content: center;
-    
     margin-top: 40px;
 }
 .blog figure{
     margin: 15px 8px;
-    border: 1px solid black;
+    
 }
 img{
     display: block;
@@ -97,30 +99,44 @@ img{
     text-decoration: none;
     color: white;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     display: block;
     padding: 15px
 }
 #projects ul{
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 10px 0px 80px 0px;
+    margin: 0; 
 }
 #projects ul li{
     text-align: center;
-    margin: 30px 0px 50px 0px;
+    margin: 30px 0px 0px 0px;
+
 }
 .more-link{
     background-color: rgb(51, 54, 58);
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     padding: 8px 20px;
+   
+}
+.more-link:hover{
+    animation-name: background;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+@keyframes background{
+    100%{
+        background-color: rgb(175, 44, 44);
+        
+    }
 }
 .btn{
     border-bottom: 5px solid rgb(175, 44, 44);
-    
+    height: 80vh;
+    margin-top: 0px;
 }
 h2{
     text-align: center;
@@ -132,6 +148,10 @@ h2{
     font-style: italic;
     margin-top: -30px;
 }
+.cajaicon{
+   
+    margin-top: 35px;
+}
 .cajaicon ul{
     list-style: none;
     padding: 0;
@@ -141,17 +161,20 @@ h2{
     flex-wrap: wrap;
 }
 .cajaicon li {
+    
     font-size: 20px;
     padding: 10px 20px;
-    margin: 5px;
+    margin: 0px 5px;
+   
 }
+
 .cajaicon li a{
     text-decoration: none;
     color: white;
 }
 footer{
     text-align: center;
-    margin: 45px 0px;
+    margin: 40px 0px;
     
 }
 footer p{  
@@ -161,9 +184,51 @@ footer a{
     text-decoration: none;
     color: white;
 }
-@media (max-width:768px) and (min-width:730px){
+@media (max-width: 900px) and (min-width:730px){
+    
     #navbar ul{
+        
         justify-content: end;
+        
+    }
+    #welcome-section header{
+        top:40%;
+    }
+    .blog{
+       
+        grid-template-columns: 380px 380px;
+        grid-template-rows: 410px 410px 410px;
+        margin-bottom: 50px;
+    }
+    .blog figure{
+        
+       margin: 15px 20px;
+    }
+    img{
+        
+        height: 320px;
+    }
+    .btn{
+        height: 60vh;
+        
+    }
+    h2{
+        
+        font-size: 50px;
+        margin-top: 70px;
+    }
+    footer{
+        display: flex;
+    }
+    footer p{
+        text-align: start;
+    }
+}
+@media (max-width: 1075px) and (min-width:900px){
+    #navbar ul{
+        
+        justify-content: end;
+        
     }
     #navbar li a{
         
@@ -174,12 +239,74 @@ footer a{
         top:40%;
     }
     .blog{
-        
-        grid-template-columns: 380px 380px;
-        grid-template-rows: 400px 400px;
+        width: 100%;
+        grid-template-columns: 500px 500px;
+        grid-template-rows: 490px 490px 490px;
+        margin-bottom: 50px;
+    }
+    .blog figure{
+        height: 458px;
+       margin: 15px 20px;
     }
     img{
+        
+        height: 400px;
+    }
+    .btn{
+        height: 60vh;
+        
+    }
+    h2{
+        font-size: 50px;
+        margin-top: 70px;
+    }
+    footer{
+        display: flex;
+    }
+    footer p{
+        text-align: start;
+    }
+}
+@media (max-width:1450px) and (min-width: 1076px){
+    #navbar ul{
+        
+        justify-content: end;
+        
+    }
+    #navbar li a{
+        padding: 15px 35px;
+    }
+    #welcome-section header{
+        top: 30%;
+    }
+    .blog{
         width: 100%;
+        grid-template-columns: 430px 430px 430px;
+        grid-template-rows: 415px 415px ;
+        margin-bottom: 50px;
+    }
+    .blog figure{
+       margin: 15px 20px;
+       
+    }
+    img{
         height: 320px;
     }
+    
+    .btn{
+        height: 50vh;
+    
+    }
+    h2{
+        
+        font-size: 50px;
+        margin-top: 120px;
+    }
+    
+    footer{
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
 }
