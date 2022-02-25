@@ -6,8 +6,7 @@ body{
     color: white;
     background-color: rgb(51, 54, 58);
 }  
-
-#navbar ul{
+#navbar{
     background-color: rgb(175, 44, 44);
     margin: 0;
     padding: 0;
@@ -15,13 +14,14 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    list-style: none;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
     border-bottom: 1px solid black;
     box-shadow: 0 10px 20px rgb(24,24,24);
     z-index: 100;
+}
+#navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
 }
 
 #navbar li a{
@@ -102,6 +102,16 @@ img{
     font-size: 20px;
     display: block;
     padding: 15px
+}
+.blog figcaption a:hover{
+    animation-name: linkcolor;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+@keyframes linkcolor{
+    100%{
+        background-color: rgb(175, 44, 44);
+    }
 }
 #projects ul{
     list-style: none;
