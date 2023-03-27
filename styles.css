@@ -163,7 +163,6 @@ h2{
     margin-top: -30px;
 }
 .cajaicon{
-   
     margin-top: 35px;
 }
 .cajaicon ul{
@@ -175,10 +174,12 @@ h2{
     flex-wrap: wrap;
 }
 .cajaicon li {
-    font-size: 20px;
+    font-size: 25px;
     padding: 10px 20px;
     margin: 0px 5px;
-   
+}
+.cajaicon li i {
+    margin-right: 8px;
 }
 .cajaicon li:hover{
     position: relative;
@@ -186,6 +187,9 @@ h2{
    animation-duration: 4s;
    animation-fill-mode: forwards;
    animation-timing-function: ease-in-out;
+}
+footer p i {
+    margin-left: 8px;
 }
 @keyframes example{
     0% {
