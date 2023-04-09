@@ -36,6 +36,7 @@ body{
     font-size: 22px;
     font-family: 'Open sans';
     font-weight: 600;
+    margin: 10px;
 }
 
 #navbar li:hover{
@@ -74,14 +75,20 @@ h1{
     height: auto;
 }
 .project-tile{
+    font-size: 35px;
+    margin: auto;
+    font-weight: 800;
+    padding: 10px 0px 0px 0px;
     text-align: center;
+    width: 95%;
+    /* text-align: center;
     font-size: 35px;
     font-weight: 800;
     padding-top: 50px;
     text-align: center;
-    width: 43%;
-    margin-left: 30%;
-    border-bottom: 2px solid rgb(255, 255, 255);
+    width: 40%;
+    margin: auto; */
+    border-bottom: 1px solid rgb(255, 255, 255);
 }
 .blog{
     display: grid;
@@ -174,13 +181,15 @@ h2{
     flex-wrap: wrap;
 }
 .cajaicon li {
-    font-size: 25px;
+    font-size: 20px;
+    font-weight: 500;
     padding: 10px 20px;
     margin: 0px 5px;
 }
-.cajaicon li i {
+.cajaicon li i{ 
     margin-right: 8px;
 }
+
 .cajaicon li:hover{
     position: relative;
     animation-name: example;
@@ -191,6 +200,7 @@ h2{
 footer p i {
     margin-left: 8px;
 }
+
 @keyframes example{
     0% {
         top: 0px;
@@ -258,6 +268,7 @@ footer a{
     #navbar ul li{
         position: relative;
         left: 28%;
+        
     }
     #navbar li a{
         padding: 15px 35px;
@@ -301,10 +312,18 @@ footer a{
     }
     #navbar li a{
         padding: 15px 35px;
+        margin: auto;
     }
     #welcome-section header{
         top: 30%;
     }
+    .project-tile{
+        font-weight: 800;
+        padding: 100px 0px 0px 0px;
+        width: 42%;
+        border-bottom: 2px solid rgb(255, 255, 255);
+    }
+    
     .blog{
         width: 100%;
         grid-template-columns: 430px 430px 430px;
